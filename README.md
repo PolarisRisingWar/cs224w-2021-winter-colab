@@ -28,3 +28,9 @@ downloaded = drive.CreateFile({'id': id})
 downloaded.GetContentFile('acm.pkl')
 ```
 （顺带一提可以参考我写的[colab tutorial笔记](https://blog.csdn.net/PolarisRisingWar/article/details/117229594#t2)，也可以直接用shell命令gdown下载数据。）
+<br><br><br>
+2021/7/9更新colab 3:（具体内容可参考我的博客）
+1. 删掉了很多个人笔记内容。
+2. 将原本colab中固定的一个F.dropout加上了self.training。
+3. 改了一下edge_indices_disjoint函数，我原来考虑无向边了，把相应内容删掉。
+4. 修改了cora数据集存储在本地的根目录位置，都改成了/tmp/cora这个文件夹。
